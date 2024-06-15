@@ -3,6 +3,7 @@ import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import HeroSections from "@/components/HeroSections";
 import ProjectSection from "@/components/ProjectSection";
+import SkillsSections from "@/components/SkillsSections";
 import SocilaLinks from "@/components/SocialLinks";
 
 export default function Home() {
@@ -11,7 +12,9 @@ export default function Home() {
         <HeroSections/>
         <SocilaLinks/>
         <AboutSections/>
+        <SkillsSections/>
         <ProjectSection/>
+        <ContactSection/>
         
       
         

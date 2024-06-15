@@ -1,21 +1,22 @@
 import React from 'react'
 import { Button } from './ui/button'
+import Link from 'next/link'
 
 const AboutSections = () => {
     return (
-        <div id='about' className=' w-[70%]  min-h-[500px] flex flex-col items-center gap-9 '>
+        <div id='about' name='about' className=' w-[70%]  min-h-[600px] flex flex-col pt-24 items-center gap-9 '>
             <h1 className=' font-bold text-3xl'>About Me</h1>
-            <p className='text-center'>Here you will find more information about me, what I do, and my current skills mostly in terms
-                of programming and technology</p>
+
             <div className=' flex flex-row'>
                 <div className=' flex flex-col gap-7 items-center '>
-                    <h1 className='font-bold text-2xl'>Get to know me!
-                    </h1>
-                    <p>
-                        Hello! I'm Dinesh Kumar M S, a passionate full-stack web developer . My journey began by honing my skills in web development, mastering languages such as HTML, CSS, and JavaScript which led to advanced frameworks and library like React JS , Node JS , Express JS .
+
+                    <p className="leading-10 md:leading-8 tracking-wider opacity-75">
+                    Hello! I'm Sakthi M, a passionate <b> full stack  web developer </b> with a robust foundation in both front-end and back-end technologies. My journey began with mastering the essentials of HTML, CSS, and JavaScript, leading me to <b>advanced frameworks</b> and <b>libraries</b> such as React JS and Next.js amd Tailwind css on the front end. On the back end, I've developed expertise in Node JS, Express JS, and working with databases like MongoDB    
                     </p>
-                    <p>I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.</p>
-                    <Button size='lg' className=' uppercase' >contact</Button>
+                    <p  className="leading-10 md:leading-8 tracking-wider opacity-75">I'm enthusiastic about <b>job </b> opportunities where I can leverage my comprehensive skill set to contribute meaningfully while continuing to learn and grow. If you have an exciting opportunity that aligns with my expertise, please don't hesitate to reach out. Let's create something amazing together!.</p>
+                    <Link href={'#contact'}>  
+                     <Button size='lg' className=' uppercase' >contact</Button>
+                    </Link>
                 </div>
             </div>
         </div>

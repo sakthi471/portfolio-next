@@ -49,7 +49,7 @@ const ContactSection = () => {
         console.log(values)
     }
     return (
-        <div className='w-full flex flex-col items-center gap-6'>
+        <div id='contact' name='contact' className='w-full pt-20 flex flex-col items-center gap-6'>
             <div className='flex flex-col items-center gap-2'>
             <h1 className=' font-bold text-3xl'>Contact</h1>
             <p>Submit the form below to get in touch with me</p>
