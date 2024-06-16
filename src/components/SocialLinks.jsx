@@ -57,9 +57,9 @@ const SocilaLinks = () => {
         {SocialLink.map(({ id, child, href, style }) => (
           (
             <li key={id} className={
-              ` bg-slate-200 hover:bg-slate-100  shadow-xl flex justify-between items-center w-40 h-11  px-4  ml-[-110px] hover:rounded-md duration-300 hover:ml-[-10px] ${style}`
+              ` bg-slate-200 hover:bg-white  shadow-xl flex justify-between items-center w-40 h-11  px-4  ml-[-110px] hover:rounded-md duration-300 hover:ml-[-10px] ${style}`
             }>
-              <a href={href} target="_blank" rel="noreferrer" className=" text-slate-900 flex w-full justify-between  items-center hover:text-purple-500   ">
+              <a href={href} target="_blank" rel="noreferrer" className=" text-slate-900 flex w-full justify-between  items-center hover:text-primary  ">
                 {child}
               </a>
             </li>

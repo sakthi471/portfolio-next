@@ -17,10 +17,13 @@ const ProjectCard = ({ project }) => {
 
 
         <Card className=' w-[90%] flex flex-row p-7 gap-6 justify-between shadow-xl'>
+            <div className='relative w-[500px] h-[300px]'>
+                <Image src={project.img} alt="Current Image" layout={'fill'} objectFit={'contain'} />
 
-            <Image src={project.img}className='' width={400}  alt='image' />
-            <div className=''>
-                <CardHeader>
+            </div>
+            <div className=' w-[50%] flex flex-col justify-between'>
+                 <div className='flex flex-col '>
+                 <CardHeader>
                     <CardTitle className=' text-lg font-bold'>{project.title}</CardTitle>
                 </CardHeader>
                 <CardContent >
@@ -28,15 +31,16 @@ const ProjectCard = ({ project }) => {
                         <p className='text-sm'> {project.description}</p>
                     </div>
                 </CardContent>
+                 </div>
                 <CardFooter className='flex justify-between'>
                     <Link href={project.link} target='_blank' ><Button className=' capitalize'>demo</Button></Link>
                     <div className='flex items-center gap-3'>
-                        { 
+                        {
                             project.techStack.map((tech, index) => (
-                                <Badge key={index}   className={`"capitalize " ${tech.color} `}>{tech.name}</Badge>
+                                <Badge key={index} className={`"capitalize " ${tech.color} `}>{tech.name}</Badge>
                             ))
                         }
-                
+
                     </div>
 
                 </CardFooter>
