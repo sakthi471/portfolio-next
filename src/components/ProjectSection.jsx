@@ -36,7 +36,7 @@ const projectData = [
         title: 'Compus Connect',
         description: "The project is a fully functional Next.js website designed to facilitate anonymous student feedback and suggestions for college improvements. Students can post their suggestions, like, and vote on others' submissions, fostering a collaborative environment. By ensuring anonymity, the platform promotes open and honest communication.",
         img: campus_connect,
-        link: 'https://www.google.com',
+        link: 'https://campus-connect-gules.vercel.app/',
         techStack: [
             {  
                 name: 'Next js',
@@ -56,7 +56,7 @@ const projectData = [
         title: 'Marvel blog site',
         description: 'This is a blog site for marvel fans. The site is designed to showcase the marvel characters, comics, and movies, and also the site has a blog section where the users can read and write blogs about marvel.  ',
         img: marvel,
-        link: 'https://www.google.com',
+        link: 'https://mcu-blog.vercel.app/',
         techStack: [
             {
                 name: 'Next js',
