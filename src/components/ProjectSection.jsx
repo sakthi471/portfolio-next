@@ -33,7 +33,7 @@ const projectData = [
     },
     {
         id:2,
-        title: 'Compus Connect',
+        title: 'Campus Connect',
         description: "The project is a fully functional Next.js website designed to facilitate anonymous student feedback and suggestions for college improvements. Students can post their suggestions, like, and vote on others' submissions, fostering a collaborative environment. By ensuring anonymity, the platform promotes open and honest communication.",
         img: campus_connect,
         link: 'https://campus-connect-gules.vercel.app/',
