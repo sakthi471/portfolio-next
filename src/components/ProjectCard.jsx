@@ -37,7 +37,7 @@ const ProjectCard = ({ project }) => {
                     <div className='flex items-center gap-3'>
                         {
                             project.techStack.map((tech, index) => (
-                                <Badge key={index} className={`"capitalize " ${tech.color} `}>{tech.name}</Badge>
+                                <Badge key={index} className={`"capitalize text-white " ${tech.color} `}>{tech.name}</Badge>
                             ))
                         }
 
