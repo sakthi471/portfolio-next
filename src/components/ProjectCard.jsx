@@ -12,26 +12,47 @@ import Image from 'next/image'
 import { Badge } from './ui/badge';
 import Link from 'next/link';
 
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+} from "@/components/ui/carousel"
+
+
 const ProjectCard = ({ project }) => {
     return (
 
 
-        <Card className=' w-[90%] flex flex-row p-7 gap-6 justify-between shadow-xl'>
-            <div className='relative w-[500px] h-[300px]'>
-                <Image src={project.img} alt="Current Image" layout={'fill'} objectFit={'contain'} />
+        <Card className=' w-[90%] flex flex-row py-7 pl-16   gap-6  shadow-xl'>
 
-            </div>
-            <div className=' w-[50%] flex flex-col justify-between'>
-                 <div className='flex flex-col '>
-                 <CardHeader>
-                    <CardTitle className=' text-lg font-bold'>{project.title}</CardTitle>
-                </CardHeader>
-                <CardContent >
-                    <div>
-                        <p className='text-sm'> {project.description}</p>
-                    </div>
-                </CardContent>
-                 </div>
+
+            <Carousel className="w-[500px] h-[300px] ">
+                <CarouselContent>
+                    {project?.images.map((img, index) => (
+                        <CarouselItem key={index}>
+                            <div className='relative w-[500px] h-[300px]'>
+                                <Image src={img} alt="Current Image" placeholder='blur' layout={'fill'} objectFit={'contain'} sizes='100vw'  />
+                            </div>  
+                        </CarouselItem>
+                    ))}
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+            </Carousel>
+
+            <div className=' w-[50%] pl-3 flex flex-col justify-between'>
+                <div className='flex flex-col '>
+                    <CardHeader>
+                        <CardTitle className=' text-lg font-bold'>{project.title}</CardTitle>
+                    </CardHeader>
+                    <CardContent >
+                        <div>
+                            <p className='text-sm'> {project.description}</p>
+                        </div>
+                    </CardContent>
+                </div>
                 <CardFooter className='flex justify-between'>
                     <Link href={project.link} target='_blank' ><Button className=' capitalize'>demo</Button></Link>
                     <div className='flex items-center gap-3'>
