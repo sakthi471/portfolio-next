@@ -8,16 +8,13 @@ import SocilaLinks from "@/components/SocialLinks";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 gap-10">
-        <HeroSections/>
-        <SocilaLinks/>
-        <AboutSections/>
-        <SkillsSections/>
-        <ProjectSection/>
-        <ContactSection/>
-        
-      
-        
+    <main className="flex   min-h-screen flex-col items-center justify-between p-24 max-md:px-4 gap-10 ">
+      <HeroSections />
+      <SocilaLinks />
+      <AboutSections />
+      <SkillsSections />
+      <ProjectSection />
+      <ContactSection />
     </main>
   );
 }

@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
         disableTransitionOnChange
         >
 
-        <div className="w-full ">
+        <div className="w-full  flex  flex-col items-center overflow-x-hidden  ">
           <Navbar />
           {children}
           <Footer/>

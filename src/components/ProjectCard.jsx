@@ -25,14 +25,14 @@ const ProjectCard = ({ project }) => {
     return (
 
 
-        <Card className=' w-[90%] flex flex-row py-7 pl-16   gap-6  shadow-xl'>
+        <Card className=' min-w-[90%] max-md:w-full flex flex-row justify-center  max-lg:flex-wrap   shadow-xl px-8 max-md:p-0  gap-8 '>
 
 
-            <Carousel className="w-[500px] h-[300px] ">
+            <Carousel className="w-[550px] h-[300px] max-md:w-[350px] max-md:h-[200px]  px-6  ">
                 <CarouselContent>
                     {project?.images.map((img, index) => (
                         <CarouselItem key={index}>
-                            <div className='relative w-[500px] h-[300px]'>
+                            <div className='relative w-[550px] h-[300px] max-md:w-[350px] max-md:h-[200px]  '>
                                 <Image src={img} alt="Current Image" placeholder='blur' layout={'fill'} objectFit={'contain'} sizes='100vw'  />
                             </div>  
                         </CarouselItem>
@@ -42,20 +42,20 @@ const ProjectCard = ({ project }) => {
                 <CarouselNext />
             </Carousel>
 
-            <div className=' w-[50%] pl-3 flex flex-col justify-between'>
+            <div className=' min-w-[50%]   flex flex-col justify-between max-md:w-full'>
                 <div className='flex flex-col '>
                     <CardHeader>
                         <CardTitle className=' text-lg font-bold'>{project.title}</CardTitle>
                     </CardHeader>
                     <CardContent >
                         <div>
-                            <p className='text-sm'> {project.description}</p>
+                            <p className='text-sm max-md:text-base'> {project.description}</p>
                         </div>
                     </CardContent>
                 </div>
-                <CardFooter className='flex justify-between'>
-                    <Link href={project.link} target='_blank' ><Button className=' capitalize'>demo</Button></Link>
-                    <div className='flex items-center gap-3'>
+                <CardFooter className='flex justify-between flex-wrap gap-5'>
+                    <Link href={project.link} target='_blank' ><Button size='sm' className=' capitalize'>demo</Button></Link>
+                    <div className='flex items-center gap-3   '>
                         {
                             project.techStack.map((tech, index) => (
                                 <Badge key={index} className={`"capitalize text-white " ${tech.color} `}>{tech.name}</Badge>

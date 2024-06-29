@@ -85,7 +85,7 @@ const SkillsSections = () => {
     return (
         <div id='skils' name='skills' className=' flex flex-col items-center gap-10 min-h-[400px] pt-24 '>
             <h1 className='text-3xl font-bold'>My Skills</h1>
-            <div className=' w-[70%] flex flex-row justify-center flex-wrap gap-5 '>
+            <div className=' min-w-[70%] flex flex-row justify-center flex-wrap gap-5 '>
                 {
                     skills.map((skill, index) => (
                         <Link key={index} href={skill.link} target='_blank' className={'hover:bg-primary/80 text-base  font-normal w-[130px] hover:text-white h-[40px] '+badgeVariants({ variant: "outline" })}>{skill.name}</Link>

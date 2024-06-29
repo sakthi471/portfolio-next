@@ -4,10 +4,10 @@ import Link from 'next/link'
 
 const AboutSections = () => {
     return (
-        <div id='about' name='about' className=' w-[70%]  min-h-[600px] flex flex-col pt-24 items-center gap-9 '>
+        <div id='about' name='about' className='  w-[65%] max-md:w-full  min-h-[600px] flex flex-col pt-24 items-center gap-9 '>
             <h1 className=' font-bold text-3xl'>About Me</h1>
 
-            <div className=' flex flex-row'>
+            <div className=' flex flex-row p-3'>
                 <div className=' flex flex-col gap-7 items-center '>
 
                     <p className="leading-10 md:leading-8 tracking-wider opacity-75">
