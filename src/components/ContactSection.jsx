@@ -52,7 +52,7 @@ const ContactSection = () => {
         <div id='contact' name='contact' className='w-full pt-20  flex flex-col items-center gap-6'>
             <div className='flex flex-col items-center gap-2'>
             <h1 className=' font-bold text-3xl'>Contact</h1>
-            <p>Submit the form below to get in touch with me</p>
+            <p>Submit the form below to get in touch with me.</p>
             </div>
              <div className='min-w-[60%] max-lg:min-w-[90%] max-md:w-full '>
              <Form {...form}>
@@ -106,7 +106,7 @@ const ContactSection = () => {
             </FormItem>
           )}
         />
-                    <Button className='w-full' type="submit">Submit</Button>
+                    <Button className='w-full uppercase ' type="submit">Submit</Button>
                 </form>
             </Form>
              </div>

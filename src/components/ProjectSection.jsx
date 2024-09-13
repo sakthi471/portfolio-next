@@ -184,7 +184,7 @@ const ProjectSection = () => {
         <div id='project' name='project' className=' flex w-full flex-col items-center  gap-14 pt-24'>
             <div className='flex  flex-col items-center px-6 gap-5'>
                 <h1 className='font-bold text-3xl capitalize text-center '>projects</h1>
-                <p>Here you will find some of the personal and hackathon projects</p>
+                <p>Here, you will find some of my personal and Hackathon projects.</p>
             </div>
 
            {

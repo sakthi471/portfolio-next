@@ -54,7 +54,7 @@ const ProjectCard = ({ project }) => {
                     </CardContent>
                 </div>
                 <CardFooter className='flex justify-between flex-wrap gap-5'>
-                    <Link href={project.link} target='_blank' ><Button size='sm' className=' capitalize'>demo</Button></Link>
+                    <Link href={project.link} target='_blank' ><Button size='sm' className=' uppercase'>demo</Button></Link>
                     <div className='flex items-center gap-3   '>
                         {
                             project.techStack.map((tech, index) => (
